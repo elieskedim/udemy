@@ -20,8 +20,8 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.onClick = function () {
         console.log("Clic !");
     };
-    AppComponent.prototype.onKey = function (event) {
-        this.value = 'Bonjour ' + event.target.value;
+    AppComponent.prototype.onKey = function (value) {
+        this.value = 'Bonjour ' + value;
     };
     AppComponent.prototype.selectPokemon = function (pokemon) {
         alert("Vous avez cliqué sur " + pokemon.name);
