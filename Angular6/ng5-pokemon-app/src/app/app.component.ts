@@ -10,20 +10,11 @@ import { POKEMONS } from './mock-pokemons';
 })
 export class AppComponent implements OnInit {
 
-   private pokemons: Pokemon[] = null;
+   private pokemons: Pokemon[];
    private title: string = "Pokémons";
-   private value: string = '';
 
    ngOnInit() {
      this.pokemons = POKEMONS;
-   }
-
-   onClick(){
-     console.log("Clic !");
-   }
-
-   onKey(value: string){
-     this.value = 'Bonjour ' + value;
    }
 
    selectPokemon(pokemon: Pokemon) {
